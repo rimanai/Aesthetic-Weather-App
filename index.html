@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Changes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="src/styles.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">	
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+	</head>
+  <body>
+		<div class="container">
+    <h1>Weather Changes</h1>
+		<h3>Wind, rain, dust – whatever is out there, you're going to be ready</h3>
+		<h3> <span id="emojirow">❄️ 🥵☔️🌈⛈   </span><button id="locbutton" class="btn btn-outline-success button-styling" title="Get the weather where you are">📍</button></h3>
+		
+		<nav class="navbar nav-bar-styling col-6" id="navbar">
+			<div class="container-fluid">
+				<form class="d-flex p-2 flex-grow-1 bd-highlight" role="search" id="search-bar">
+					<input class="form-control me-2 form-styling" type="search" id="search-box-input" placeholder=" 🔍 Find out about the weather anywhere you want" aria-label="Search">
+					<button class="btn btn-outline-success button-styling" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+    <div class="row my-row">
+      <div class="col-sm-4">
+        <div class="card my-card-styling h-80">
+          <div class="card-body">
+						<h5 class="card-title weather-title"><span class="city-name-placeholder"> </span> <span id="now">Right Now</span></h5>
+						<hr />
+            <p class="card-text">
+              It looks like it's bloody awesome:
+						</p>
+						<h2 class="temperature"> 
+							<span class="tempValue" id="temp-now">❔</span>° <button class="tempLogo" title="convert to F and back">C</button>
+						</h2>
+						<span class="weather-emoji"> ☀️ </span>
+						
+	
+					 
+				</div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card my-card-styling h-80">
+          <div class="card-body">
+						<h5 class="card-title weather-title"><span class="city-name-placeholder"> </span> <span id="two">At Night</span></h5>
+						<hr/>
+            <p class="card-text">
+							
+              It gets freaking cold. 
+						</p>
+						<h2 class="temperature"> <span id="temp-two" class="tempValue">🤨</span>° <button class="tempLogo" title="convert to F and back">C</button></h2>
+						<span class="weather-emoji"> ☔️ </span>
+           
+					</div>
+			
+		</div>
+	</div>
+	<div class="col-sm-4">
+			<div class="card my-card-styling h-80">
+				<div class="card-body">
+					<h5 class="card-title weather-title"><span class="city-name-placeholder"> </span> Tomorow</h5>
+					<hr/>
+					<p class="card-text">
+					Get out there anyway, it's character building.
+					</p>
+					<h2 class="temperature"> <span id="temp-three" class="tempValue">❓</span>° <button title="convert to F and back" class="tempLogo">C</button></h2>
+					<span class="weather-emoji"> ⛈ </span>
+					
+				</div>
+            </div>
+    </div>
+    </div>
+
+    <div class="row my-row">
+      <div class="col-sm-4">
+        <div class="card my-card-styling h-100">
+          <div class="card-body">
+						<h5 class="card-title weather-title"><span class="city-name-placeholder"> </span> <span id="day-3">2 Days From Now</span></h5>
+						<hr />
+            <p class="card-text">
+              Lucky you! The weather's gorgeous.
+						</p>
+						<h2 class="temperature"> <span id="temp-four" class="tempValue">💫</span>° <button title="convert to F and back" class="tempLogo">C</button>, Cloudy</h2>
+						<span class="weather-emoji">☀️⛅️ </span>
+						
+					 
+				</div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card my-card-styling h-100">
+          <div class="card-body">
+						<h5 class="card-title weather-title"><span  class="city-name-placeholder"> </span> <span id="day-4">In 3 Days</span> </h5>
+						<hr/>
+            <p class="card-text">
+							
+              What a day!
+						</p>
+						<h2 class="temperature"> <span id="temp-five" class="tempValue">👀</span>° <button title="convert to F and back" class="tempLogo">C</button>, Sunny</h2>
+						<span class="weather-emoji"> ☀️ </span>
+						
+					</div>
+			
+		</div>
+	</div>
+	<div class="col-sm-4">
+			<div class="card my-card-styling h-100">
+				<div class="card-body">
+					<h5 class="card-title advice-title">Advice of the day</h5>
+					<hr/>
+					<p class="card-text advice-text"><span class="advice-emoji"> 💭 </span></br> Humans can feel the temperature differently when the wind is cold, it's more humid etc. Sometimes the actual degrees just don't feel accurate. </br>
+					</br>That's why weather apps have <b>'feels like' </b>section. </p>
+					
+					
+				</div>
+            </div>
+    </div>
+    </div>	
+			
+		
+	</div>
+
+	<footer>
+
+		<p>Open-Sourced Project. Code, blood and sweat – property of miss Yana Pukhalska</p>
+	</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+		></script>
+		<div>
+ <script src="src/index.js"></script>
+ 
+
+	</body>
+</html>

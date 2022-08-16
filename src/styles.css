@@ -1,0 +1,168 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background: rgb(255, 245, 189);
+  background: linear-gradient(
+    60deg,
+    rgba(255, 245, 189, 1) 0%,
+    rgba(245, 145, 205, 1) 35%,
+    rgba(166, 145, 219, 1) 100%
+  );
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+h2,
+p {
+  color: #594d77;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(to right, #fff9db, #fff5bd);
+  color: #f5f0da;
+  text-shadow: 1px 1px 0 #f591cd, 1px -1px 0 #a5d6af, -1px 1px 0 #a5d6af,
+    -1px -1px 0 #ffc894, 2px 0px 0 #ffc894, 0px 2px 0 #f591cd,
+    -1px 0px 0 #a5d6af, 0px -2px 0 #a5d6af;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 500;
+  padding-top: 20px;
+  letter-spacing: 7px;
+}
+
+h3 {
+  padding-bottom: 5px;
+  color: #c5ffd1;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+footer {
+  font-family: monospace;
+  text-align: center;
+  font-size: 11px;
+  margin: 20px, 0;
+}
+
+.my-card-styling {
+  position: relative;
+  background-color: rgba(245, 245, 245, 0.3);
+  border-color: rgba(207, 205, 205, 0.144);
+  box-shadow: 1px 10px 17px 8px rgba(0, 0, 0, 0.1);
+  transition: all 290ms ease-in-out;
+  text-align: center;
+}
+
+.my-card-styling:hover {
+  box-shadow: 1px 10px 17px 8px rgba(0, 0, 0, 0.3), 5px 5px 0 #f591cd,
+    3px -3px 0 #a5d6af, -3px 3px 0 #a5d6af, -3px -5px 0 #ffc894,
+    5px 0px 0 #ffc894, 0px 3px 0 #f591cd, -5px 3px 0 #a5d6af, 0px -3px 0 #a5d6af;
+  background-color: #a691db;
+  color: #c5ffd1;
+}
+
+.weather-title {
+  color: #c5ffd1;
+}
+
+.advice-title {
+  color: #cfccff;
+}
+
+.my-row {
+  padding-top: 37px;
+  padding-bottom: 20px;
+
+  margin: 0 auto;
+}
+
+.advice-emoji {
+  font-size: 27px;
+}
+
+.weather-emoji {
+  font-size: 110px;
+  padding: 0;
+  position: relative;
+  left: 0px;
+  bottom: 28px;
+  transition: all 200ms ease-in-out;
+  text-shadow: 0 0.5rem 0.7rem rgba(236, 231, 231, 0.3),
+    0 0.2rem 0.5rem rgba(238, 224, 241, 0.2);
+}
+
+.weather-emoji:hover {
+  text-shadow: 0 -0.5rem 1rem rgba(243, 225, 225, 0.4),
+    0 0.2rem 0.5rem rgba(204, 189, 207, 0.4);
+  font-size: 120px;
+}
+
+.advice-emoji:hover {
+  font-size: 120px;
+  text-shadow: 0 -0.5rem 1rem rgba(231, 235, 14, 0.4),
+    0 0.2rem 0.5rem rgba(219, 209, 221, 0.726);
+}
+
+p.advice-text {
+  font-size: 19px;
+}
+
+.advice-emoji {
+  text-align: center;
+  text-shadow: 0 -0.5rem 1rem rgba(243, 225, 225, 0.4),
+    0 0.2rem 0.5rem rgba(204, 189, 207, 0.4);
+  transition: all 200ms ease-in-out;
+}
+
+.nav-bar-styling {
+  display: block;
+  margin: 0 auto;
+}
+
+.button-styling {
+  background-color: rgba(255, 255, 255, 0.112);
+  color: #ffcfeb;
+  border-color: #f591cd;
+  border-width: 3px;
+  transition: all 200ms ease-in-out;
+}
+
+.button-styling:hover {
+  box-shadow: 1px 1px 0 #f591cd, 1px -1px 0 #a5d6af, -1px 1px 0 #a5d6af,
+    -1px -1px 0 #ffc894, 2px 0px 0 #ffc894, 0px 2px 0 #f591cd,
+    -1px 0px 0 #a5d6af, 0px -2px 0 #a5d6af;
+  background-color: #a691db;
+  border-color: transparent;
+  color: #c5ffd1;
+}
+
+.button-styling:focus {
+  background-color: #aa60ff;
+  border-color: #f591cd;
+  box-shadow: none;
+}
+
+.form-styling {
+  box-shadow: 1px 1px 0 #f591cd, 1px -1px 0 #a5d6af, -1px 1px 0 #a5d6af,
+    -1px -1px 0 #ffc894, 2px 0px 0 #ffc894, 0px 2px 0 #f591cd,
+    -1px 0px 0 #a5d6af, 0px -2px 0 #a5d6af;
+}
+
+.tempLogo {
+  border: none;
+  background: linear-gradient(to left, #aa60ff, #e7840a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 5px;
+  color: transparent;
+}
+
+.city-name-placeholder {
+  color: #fffbbf;
+  text-transform: uppercase;
+  font-size: larger;
+}
